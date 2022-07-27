@@ -1,0 +1,196 @@
+:root {
+    --black: black;
+    --yellow: #e7bc0f;
+    --bg: aliceblue;
+    --bg2: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--bg2);  
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-form {
+    background-color: var(--bg);
+    padding: 20px;
+    border-top: 5px solid var(--yellow);
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.main-form h3 {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.container-input {
+    width: 100%;
+    border: 1px solid var(--bg2);
+
+    display: flex;
+    align-items: center;
+}
+
+.container-input i {
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid var(--black);
+}
+
+.container-input input {
+    width: 100%;
+    height: 25px;
+    border: none;
+    padding-left: 5px;
+}
+
+.container-input select {
+    border: none;
+}
+
+.container-forcasenha {
+    width: 100%;
+    margin-bottom: -5px;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+}
+
+.container-forcasenha span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.small-error {
+    font-size: 12px;
+}
+
+.container-name {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.div-border {
+    border: 1px solid var(--black);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-name .div-border i {
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid var(--black);
+}
+
+.container-name .div-border input {
+    width: 100%;
+    height: 25px;
+    border: none;
+    padding-left: 5px;
+}
+
+.check-sex {
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.check-sex label {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.check-sex label .check-input {
+    margin-right: 2px;
+}
+
+#paises {
+    width: 100%;
+    height: 25px;
+}
+
+.div-terms {
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div-terms input {
+    margin-right: 2px;
+}
+
+.div-terms a{
+    margin-left: 2px;
+    margin-right: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.div-news {
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div-news input {
+    margin-right: 2px;
+}
+
+.btn-register {
+    background-color: var(--yellow);
+    border: 1px solid var(--black);
+    height: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media (max-width: 300px) {
+    .main-form {
+        width: 100%;
+        padding: 5px;
+    }
+    .div-terms, .div-news {
+        font-size: 9px;
+    }
+}
